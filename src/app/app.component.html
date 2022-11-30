@@ -1,0 +1,63 @@
+<div class="search">
+
+  <form action="">
+    <input type="text" placeholder="City Name">
+  </form>
+</div>
+
+
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/w1.jpeg" *ngIf="14 < 15" />
+    <img src="../assets/w2.jpeg" *ngIf="14 >= 15" />
+
+    <div class="weather-data">
+      <div class="location">Dar es salam</div>
+      <div class="temperature">{{ 14.4 | number: "1.0-0" }}C</div>
+    </div>
+  </div>
+
+  <div class="lower-data">
+    <div class="more-info-label">More Information</div>
+
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/w2.jpeg" />
+          <span>min</span>
+        </div>
+
+        <div class="info-block-value">10 C</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/w1.jpeg" />
+          <span>max</span>
+        </div>
+
+        <div class="info-block-value">50 C</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/w3.jpeg" />
+          <span>humidity</span>
+        </div>
+
+        <div class="info-block-value">105%</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/w4.jpeg" />
+          <span>wind</span>
+        </div>
+
+        <div class="info-block-value">10m/s</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
